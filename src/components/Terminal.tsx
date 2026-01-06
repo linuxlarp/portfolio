@@ -8,7 +8,7 @@ interface TerminalLineProps {
   onComplete?: () => void;
 }
 
-function TerminalLine({ text = "", delay = 0, speed = 50, onComplete }: TerminalLineProps) {
+export default function TerminalLine({ text = "", delay = 0, speed = 50, onComplete }: TerminalLineProps) {
   return (
     <TypeAnimation
       sequence={[
