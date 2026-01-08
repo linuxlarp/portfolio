@@ -1,3 +1,5 @@
+// /src/app/page.tsx
+
 'use client'
 
 import { useEffect } from "react";
@@ -18,7 +20,7 @@ function ConstructStatus({ status, type = "ok"}: ConstructStatusProps) {
   };
 
   return (
-    <span className="text-white inline-block w-16 text-center flex-shrink-0">
+    <span className="inline-block w-12 text-center mr-2">
       [<span className={defaultColors[type]}>{status}</span>]
     </span>
   );
@@ -41,7 +43,7 @@ export default function Home() {
       { text: "[    0.000012] Initializing core...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.000234] Loading kernel modules: hobbies, portfolio, linux, hosting, cloudflare", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.001872] Mounting /dev/portfolio...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
-      { text: "[    0.002521] Filesystem type: inspirationfs (rw, relatime)", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
+      { text: "[    0.002521] Filesystem type: ext4", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.003433] Starting init process (PID 1)...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.004004] systemd[1]: Starting linuxlarp identity service...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.004812] systemd[1]: Started linuxlarp-daemon.service", className: "text-green-400", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
@@ -57,12 +59,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black font-mono p-8">
       <div className="max-w-4xl mx-auto">
+        {/* Display all terminal lines */}
         {lines.map((line, index) =>
           index <= currentLine && (
-            <div key={index} className="flex">
+            <div key={index} className="flex items-start">
               {line.animated ? (
                 <>
-                  <span className="inline-block w-16 flex-shrink-0"></span>
+                  {line.statusComponent && currentLine > index && (
+                    <span className="flex-shrink-0">{line.statusComponent}</span>
+                  )}
                   <span className={line.className}>
                     <TerminalLine
                       text={line.text}
@@ -73,12 +78,10 @@ export default function Home() {
                 </>
               ) : (
                 <>
-                  {line.statusComponent ? (
-                    line.statusComponent
-                  ) : (
-                    <span className="inline-block w-16 flex-shrink-0"></span>
+                  {line.statusComponent && (
+                    <span className="flex-shrink-0">{line.statusComponent}</span>
                   )}
-                  <span className={line.className}>{line.text}</span>
+                  <span className={`${line.className} whitespace-pre-wrap break-words flex-1`}>{line.text}</span>
                   {currentLine === index && (
                     setTimeout(() => setCurrentLine(index + 1), 100)
                   )}
@@ -90,7 +93,6 @@ export default function Home() {
       
         {currentLine >= lines.length && (
           <div className="flex items-center gap-2 mt-2">
-            <span className="inline-block w-16 flex-shrink-0"></span>
             <span className="text-green-400">guest@linuxlarp:~$</span>
             <input
               type="text"

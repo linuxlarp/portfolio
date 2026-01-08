@@ -1,4 +1,4 @@
-// Components/CommandOutputs.tsx
+// /src/components/CommandOutputs.tsx
 
 import { ReactNode } from "react";
 
@@ -10,8 +10,8 @@ interface CommandOutput {
 
 function parseOutput(text: string, className = "text-white", animated = false) {
   return text
-    .trim() 
     .split('\n')
+    .filter(line => line.length > 0)
     .map(line => ({
       text: line,
       className,
@@ -25,11 +25,11 @@ export const commandOutputs: Record<string, CommandOutput[]> = {
 
 Hello there! My name is linuxlarp or linuxlarper.
 
-Current 15 years old, self-taught developer, aviation enthusiast, open source & right to repair advocate.
+Currently 15 years old, self-taught developer, aviation enthusiast, open source & right to repair advocate.
 
 Working on my Private Pilots License (PPL) under the FAA, and enrolled in dual-credit aviation courses at a local higschool.
     
-Most of my projects are for Roblox, Discord and social media platforms but im always expanding my skills and expertises to other communities and platforms online. 
+Most of my projects are for Roblox, Discord and social media platforms but im always expanding my skills and expertises to communities, platforms, causes and needs.
 
 I love tinkering and "larping" with Linux as my name suggests. I also love homelabbing on my Raspberry Pi 5 and Dell Optiplex 7010.
 
@@ -39,20 +39,51 @@ And when im not doing any of the above, you can probably find me:
 - Microsoft FLight Sim
 - Drinking more Caffine becauese: more espresso, less depresso
 
+To learn more about me, you can use any of the following commands:
+about techstack - Tech Experience
+about linux - Linux Experience
+
   `, "text-white"),
 
+"about techstack": parseOutput(`
+This is the tech stack of programming languages, platforms, skills and tools im using to develop the future:
+
+
+Languages:
+- JavaScript & TypeScript (Beginner) 
+- HTML5 & CSS  
+- Python 
+- Golang (Beginner) 
+
+Tools:
+- Linux (if you couldnt already tell) 
+- SQL 
+- Docker 
+- Cloudflare 
+- Raspberry Pi 
+- Red Hat Linux 
+- Markdown  
+- Bash 
+
+Frameworks:
+- NextJS (Hey! Fun fact, this website is built on NextJS!) 
+- FastAPI 
+- Node.js (Beginner) 󰎙
+
+Applications:
+- PyCharm 
+- Photoshop 
+
+`),
+
+
   projects: parseOutput(`
-╔════════════════════════════════════════╗
-║              PROJECTS                  ║
-╚════════════════════════════════════════╝
 
 
   `, "text-white"),
 
   contact: parseOutput(`
-╔════════════════════════════════════════╗
-║              CONTACT                    ║
-╚════════════════════════════════════════╝
+
 
 
   `, "text-white"),
