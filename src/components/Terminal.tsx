@@ -1,3 +1,5 @@
+// Components/Terminal.tsx
+
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 

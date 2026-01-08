@@ -1,5 +1,8 @@
+// Components/TerminalContext.tsx
+
 'use client';
 import { createContext, useContext, useState, ReactNode } from 'react';
+import { commandOutputs } from './CommandOutputs';
 
 interface TerminalLine {
   text: string;
@@ -15,6 +18,9 @@ interface TerminalContextType {
   clearLines: () => void;
   currentLine: number;
   setCurrentLine: (line: number) => void;
+  inputValue: string;
+  setInputValue: (value: string) => void;
+  handleCommand: (command: string) => void;
 }
 
 const TerminalContext = createContext<TerminalContextType | undefined>(undefined);
@@ -22,6 +28,7 @@ const TerminalContext = createContext<TerminalContextType | undefined>(undefined
 export function TerminalProvider({ children }: { children: ReactNode }) {
   const [lines, setLines] = useState<TerminalLine[]>([]);
   const [currentLine, setCurrentLine] = useState(0);
+  const [inputValue, setInputValue] = useState('');
 
   const addLine = (line: TerminalLine) => {
     setLines(prev => [...prev, line]);
@@ -32,18 +39,16 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     setCurrentLine(0);
   };
 
-  const handleCommand = (command: string ) => {
-    const cmd = command.trim().toLowerCase()
-
+  const handleCommand = (command: string) => {
+    const cmd = command.trim().toLowerCase();
+    
     addLine({
-      text: `user@linuxlarp~$ ${command}`,
+      text: `guest@linuxlarp:~$ ${command}`,
       className: "text-green-400",
       animated: false
-    })
+    });
 
-
-    // TEMPORARY LOGIC FOR COMMANDS
-    if (cmd == 'clear') {
+    if (cmd === 'clear') {
       setTimeout(() => clearLines(), 100);
     }
     else if (cmd === 'help') {
@@ -51,10 +56,29 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
         text: "Available commands are: help, clear, about, projects, fastfetch, contact",
         className: "text-white",
         animated: false,
-      })
-    };
-    
-  }
+      });
+    }
+
+    else if (commandOutputs[cmd]) {
+      commandOutputs[cmd].forEach(line => {
+        addLine(line);
+      });
+    }
+
+
+    else if (cmd === '') {
+      // Do nothing, it gets quiet in here. Dont you think?
+    }
+    else {
+      addLine({
+        text: `bash: ${command}: command not found`,
+        className: "text-red-400",
+        animated: false
+      });
+    }
+
+    setInputValue('');
+  };
 
   return (
     <TerminalContext.Provider value={{ 
@@ -63,7 +87,10 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
       addLine, 
       clearLines, 
       currentLine, 
-      setCurrentLine
+      setCurrentLine,
+      inputValue,
+      setInputValue,
+      handleCommand,
     }}>
       {children}
     </TerminalContext.Provider>
