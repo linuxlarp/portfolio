@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 
 interface TerminalLineProps {
-  text: string;
+  text?: string;
   delay?: number;
   speed?: number;
   onComplete?: () => void;

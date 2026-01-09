@@ -56,14 +56,26 @@ export default function Home() {
     setLines(bootLines);
   }, [setLines]);
 
+  useEffect(() => {
+    if (currentLine >= lines.length) return;
+    
+    const currentLineData = lines[currentLine];
+    
+    if (!currentLineData.animated) {
+      const timer = setTimeout(() => setCurrentLine(currentLine + 1), 100);
+      return () => clearTimeout(timer);
+    }
+  }, [currentLine, lines, setCurrentLine]);
+
   return (
     <div className="min-h-screen bg-black font-mono p-8">
       <div className="max-w-4xl mx-auto">
-        {/* Display all terminal lines */}
         {lines.map((line, index) =>
           index <= currentLine && (
             <div key={index} className="flex items-start">
-              {line.animated ? (
+              {line.image ? (
+                <img src={line.image} alt="terminal-image" className="max-w-full mt-2 rounded" />
+              ) : line.animated && line.text ? (
                 <>
                   {line.statusComponent && currentLine > index && (
                     <span className="flex-shrink-0">{line.statusComponent}</span>
@@ -81,10 +93,9 @@ export default function Home() {
                   {line.statusComponent && (
                     <span className="flex-shrink-0">{line.statusComponent}</span>
                   )}
-                  <span className={`${line.className} whitespace-pre-wrap break-words flex-1`}>{line.text}</span>
-                  {currentLine === index && (
-                    setTimeout(() => setCurrentLine(index + 1), 100)
-                  )}
+                  <span className={`${line.className} whitespace-pre-wrap break-words flex-1`}>
+                    {line.text || '\u00A0'}
+                  </span>
                 </>
               )}
             </div>

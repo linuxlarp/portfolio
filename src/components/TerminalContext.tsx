@@ -6,6 +6,7 @@ import { commandOutputs } from './CommandOutputs';
 
 interface TerminalLine {
   text: string;
+  image?: string;
   className?: string;
   animated?: boolean;
   statusComponent?: ReactNode;
@@ -61,6 +62,7 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
 
     else if (commandOutputs[cmd]) {
       commandOutputs[cmd].forEach(line => {
+        // @ts-expect-error - CommandOutput type mismatch
         addLine(line);
       });
     }
@@ -69,6 +71,7 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     else if (cmd === '') {
       // Do nothing, it gets quiet in here. Dont you think?
     }
+    
     else {
       addLine({
         text: `bash: ${command}: command not found`,

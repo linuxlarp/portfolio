@@ -3,27 +3,38 @@
 import { ReactNode } from "react";
 
 interface CommandOutput {
-    text: string;
+    text?: string;
+    image?: string;
     animated?: boolean;
     statusComponent?: ReactNode;
 }
 
-function parseOutput(text: string, className = "text-white", animated = false) {
+function parseOutput(text: string, className = "text-white", animated = false): CommandOutput[] {
   return text
     .split('\n')
-    .filter(line => line.length > 0)
-    .map(line => ({
-      text: line,
-      className,
-      animated
-    }));
+    .map(line => {
+      const imageMatch = line.match(/^%IMAGE:(.+)%$/);
+      
+      if (imageMatch) {
+        return {
+          image: imageMatch[1], 
+          className
+        };
+      }
+      
+      return {
+        text: line === '' ? '\u00A0' : line,
+        className,
+        animated
+      };
+    });
 }
-
 
 export const commandOutputs: Record<string, CommandOutput[]> = {
   "about": parseOutput(`
-
 Hello there! My name is linuxlarp or linuxlarper.
+
+%IMAGE:/Gradient.png%
 
 Currently 15 years old, self-taught developer, aviation enthusiast, open source & right to repair advocate.
 
@@ -39,7 +50,7 @@ And when im not doing any of the above, you can probably find me:
 - Microsoft FLight Sim
 - Drinking more Caffine becauese: more espresso, less depresso
 
-To learn more about me, you can use any of the following commands:
+To learn more about me, my interests and other topics, you can use any of the following commands:
 about techstack - Tech Experience
 about linux - Linux Experience
 
