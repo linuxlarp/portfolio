@@ -98,9 +98,27 @@ My Linux Setup:
 - WM: Hyprland 
 - Shell: fish 󰈺
 
+%IMAGE: /static/images/rice.png%
+
 `),
 
   projects: parseOutput(`
+HourlyPetsTwitter 
+
+HourlyPetsTwitter was a Twitter/X bot coded in Python's tweepy library that posted hourly pictures of furry friends using the public Dog and Cat APIs. The bot was active from 2023 to 2024 before being discontinued and no longer maintaned.
+
+
+ https://github.com/linuxlarp/HourlyPetsTwitter
+
+Links
+»  Tweepy GitHub: https://github.com/tweepy/tweepy
+» 󰩃 Dog API: https://dog.ceo/dog-api
+»  Cat API: https://thecatapi.com/
+
+%IMAGE: /static/images/gradient.png%
+
+ERLCExampleBot
+A Discord bot template originally built for Reno Tahoe Roleplay featuring Roblox OAuth2 verification, embedded API, and "some" moderation tools. Built entirely by hand with 99% no AI assistance.
 
 
   `, "text-white"),
