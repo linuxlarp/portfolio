@@ -5,11 +5,12 @@ import { createContext, useContext, useState, ReactNode } from 'react';
 import { commandOutputs } from './CommandOutputs';
 
 interface TerminalLine {
-  text: string;
+  text?: string;
   image?: string;
   className?: string;
   animated?: boolean;
   statusComponent?: ReactNode;
+  link?: { title: string; href: string };
 }
 
 interface TerminalContextType {
@@ -62,7 +63,6 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
 
     else if (commandOutputs[cmd]) {
       commandOutputs[cmd].forEach(line => {
-        // @ts-expect-error - CommandOutput type mismatch
         addLine(line);
       });
     }

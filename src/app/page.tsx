@@ -67,59 +67,123 @@ export default function Home() {
     }
   }, [currentLine, lines, setCurrentLine]);
 
+  // helper to convert inline %LINK:TITLE:URL% to anchor nodes
+  const renderTextWithLinks = (txt: string) => {
+    const regex = /%LINK:([^:]+?):([^%]+?)%/g;
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    let m: RegExpExecArray | null;
+    let key = 0;
+
+    while ((m = regex.exec(txt)) !== null) {
+      const idx = m.index;
+      if (idx > lastIndex) {
+        parts.push(txt.slice(lastIndex, idx));
+      }
+      parts.push(
+        <a key={`link-${key++}`} href={m[2].trim()} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
+          {m[1].trim()}
+        </a>
+      );
+      lastIndex = idx + m[0].length;
+    }
+
+    if (lastIndex < txt.length) {
+      parts.push(txt.slice(lastIndex));
+    }
+
+    return parts;
+  };
+
+  const renderTerminalLine = (line: typeof lines[0], index: number) => {
+    const showStatus = line.statusComponent && currentLine > index;
+
+    if (line.image) {
+      return (
+        <img src={line.image} alt="terminal-image" className="max-w-full mt-2 rounded" />
+      );
+    }
+
+    if (line.link) {
+      return (
+        <>
+          {line.statusComponent && <span className="flex-shrink-0">{line.statusComponent}</span>}
+          <a
+            href={line.link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${line.className} underline`}
+          >
+            {line.link.title}
+          </a>
+        </>
+      );
+    }
+
+    if (line.animated && line.text) {
+      // currently typing
+      if (currentLine === index) {
+        const typingText = line.text.replace(/%LINK:([^:]+?):([^%]+?)%/g, (_, title) => title);
+        return (
+          <>
+            {showStatus && <span className="flex-shrink-0">{line.statusComponent}</span>}
+            <span className={line.className}>
+              <TerminalLine
+                text={typingText}
+                speed={70}
+                onComplete={() => setCurrentLine(index + 1)}
+              />
+            </span>
+          </>
+        );
+      }
+
+      return (
+        <>
+          {line.statusComponent && <span className="flex-shrink-0">{line.statusComponent}</span>}
+          <span className={`${line.className} whitespace-pre-wrap break-words flex-1`}>
+            {renderTextWithLinks(line.text || '\u00A0')}
+          </span>
+        </>
+      );
+    }
+
+    return (
+      <>
+        {line.statusComponent && <span className="flex-shrink-0">{line.statusComponent}</span>}
+        <span className={`${line.className} whitespace-pre-wrap break-words flex-1`}>
+          {renderTextWithLinks(line.text || '\u00A0')}
+        </span>
+      </>
+    );
+  };
+
+  const renderCommandInput = () => (
+    <div className="flex items-center gap-2 mt-2">
+      <span className="text-green-400">guest@linuxlarp:~$</span>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        onKeyDown={(e) => e.key === 'Enter' && handleCommand(inputValue)}
+        className="bg-transparent text-green-400 outline-none flex-1 font-mono"
+        autoFocus
+        spellCheck={false}
+      />
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-black font-mono p-8">
       <div className="max-w-4xl mx-auto">
         {lines.map((line, index) =>
           index <= currentLine && (
             <div key={index} className="flex items-start">
-              {line.image ? (
-                <img src={line.image} alt="terminal-image" className="max-w-full mt-2 rounded" />
-              ) : line.animated && line.text ? (
-                <>
-                  {line.statusComponent && currentLine > index && (
-                    <span className="flex-shrink-0">{line.statusComponent}</span>
-                  )}
-                  <span className={line.className}>
-                    <TerminalLine
-                      text={line.text}
-                      speed={70}
-                      onComplete={() => setCurrentLine(index + 1)}
-                    />
-                  </span>
-                </>
-              ) : (
-                <>
-                  {line.statusComponent && (
-                    <span className="flex-shrink-0">{line.statusComponent}</span>
-                  )}
-                  <span className={`${line.className} whitespace-pre-wrap break-words flex-1`}>
-                    {line.text || '\u00A0'}
-                  </span>
-                </>
-              )}
+              {renderTerminalLine(line, index)}
             </div>
           )
         )}
-      
-        {currentLine >= lines.length && (
-          <div className="flex items-center gap-2 mt-2">
-            <span className="text-green-400">guest@linuxlarp:~$</span>
-            <input
-              type="text"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') {
-                  handleCommand(inputValue);
-                }
-              }}
-              className="bg-transparent text-green-400 outline-none flex-1 font-mono"
-              autoFocus
-              spellCheck={false}
-            />
-          </div>
-        )}
+        {currentLine >= lines.length && renderCommandInput()}
       </div>
     </div>
   );
