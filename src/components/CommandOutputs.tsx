@@ -226,7 +226,26 @@ Social Media:
 
   `, "text-white"),
 
- fastfetch: parseOutput(`
-
-  `, "text-blue-400"),
+// dont mind the wierd ass ASCII formatting, if it works it works
+fastfetch: parseOutput(` 
+         _nnnn_           guest@linuxlarp
+        dGGGGMMb          -----------------------
+       @p~qp~~qMb         OS: CachyOS x86_64
+       M|@||@) M|         Host: linuxlarp.dev
+       @,----.JM|         Kernel: linux-cachyos
+      JS^\\__/  qKL        Uptime: 15 years
+     dZP        qKRb      Packages: 847 (pacman)
+    dZP          qKKb     Shell: fish
+   fZP            SMMb    Resolution: 1920x1080
+   HZM            MMMM    DE: Hyprland
+   FqM            MMMM    WM: Hyprland (Wayland)
+ __| ".        |\\dS"qML   Terminal: ghostty
+ |    \`.       | \`' \\Zq   CPU: AMD Ryzen 7 7700X (16) @ 5.40 GHz
+_)      \\.___.,|     .'   GPU: NVIDIA GeForce RTX 4060 Ti
+\\____   )MMMMMP|   .'     Memory: 3247MiB / 49152MiB
+     \`-'       \`--' hjm   Disk (/): 512GB / 2048GB (25%)
+                          Local IP: 192.168.1.100
+                          Battery: N/A
+                          Locale: en_US.UTF-8
+`, "text-cyan-400"),
 };
