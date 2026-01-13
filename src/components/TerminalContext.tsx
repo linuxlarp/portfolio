@@ -23,6 +23,10 @@ interface TerminalContextType {
   inputValue: string;
   setInputValue: (value: string) => void;
   handleCommand: (command: string) => void;
+  commandHistory: string[];
+  historyIndex: number;
+  setHistoryIndex: (index: number) => void;
+  navigateHistory: (direction: 'up' | 'down') => void;
 }
 
 const TerminalContext = createContext<TerminalContextType | undefined>(undefined);
@@ -31,6 +35,8 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
   const [lines, setLines] = useState<TerminalLine[]>([]);
   const [currentLine, setCurrentLine] = useState(0);
   const [inputValue, setInputValue] = useState('');
+  const [commandHistory, setCommandHistory] = useState<string[]>([]);
+  const [historyIndex, setHistoryIndex] = useState(-1);
 
   const addLine = (line: TerminalLine) => {
     setLines(prev => [...prev, line]);
@@ -41,8 +47,36 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     setCurrentLine(0);
   };
 
+  const navigateHistory = (direction: 'up' | 'down') => {
+    if (commandHistory.length === 0) return;
+
+    if (direction === 'up') {
+      const newIndex = historyIndex === -1 
+        ? commandHistory.length - 1 
+        : Math.max(0, historyIndex - 1);
+      setHistoryIndex(newIndex);
+      setInputValue(commandHistory[newIndex]);
+    } else {
+      if (historyIndex === -1) return;
+      
+      const newIndex = historyIndex + 1;
+      if (newIndex >= commandHistory.length) {
+        setHistoryIndex(-1);
+        setInputValue('');
+      } else {
+        setHistoryIndex(newIndex);
+        setInputValue(commandHistory[newIndex]);
+      }
+    }
+  };
+
   const handleCommand = (command: string) => {
     const cmd = command.trim().toLowerCase();
+    
+    if (command.trim()) {
+      setCommandHistory(prev => [...prev, command]);
+      setHistoryIndex(-1);
+    }
     
     addLine({
       text: `guest@linuxlarp:~$ ${command}`,
@@ -126,6 +160,10 @@ source, exit, coffee, secret, whoami, hostname, hardware`,
       inputValue,
       setInputValue,
       handleCommand,
+      commandHistory,
+      historyIndex,
+      setHistoryIndex,
+      navigateHistory,
     }}>
       {children}
     </TerminalContext.Provider>
