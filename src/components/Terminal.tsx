@@ -19,6 +19,7 @@ export default function TerminalLine({ text = "", delay = 0, speed = 50, onCompl
         () => onComplete && onComplete()
       ]}
       wrapper="div"
+      // @ts-ignore
       speed={speed as any}
       cursor={false}
     />
