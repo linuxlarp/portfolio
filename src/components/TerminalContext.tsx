@@ -53,9 +53,10 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     if (cmd === 'clear') {
       setTimeout(() => clearLines(), 100);
     }
+
     else if (cmd === 'help' || command == '') {
       addLine({
-        text: "Available commands are: help, clear, about, projects, skills, fastfetch, contact, blog",
+        text: "Available commands are: help, clear, about, projects, skills, fastfetch, contact, blog, source, exit",
         className: "text-white",
         animated: false,
       });
@@ -65,8 +66,6 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
         className: "text-white",
         animated: false,
       });
-
-
     }
 
     else if (commandOutputs[cmd]) {
@@ -77,6 +76,26 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
 
     else if (cmd === '') {
       // Do nothing, it gets quiet in here. Dont you think? (Also redirects to help)
+    }
+
+    else if (cmd == 'exit') {
+
+      for (let step = 5; step > 0; step--) {
+        setTimeout(() => {
+          addLine({
+            text: `Self destructing in ${step}...`,
+            className: "text-red-400",
+            animated: true,
+          });
+
+          if (step === 1) {
+            setTimeout(() => {
+              window.location.href = 'about:blank'
+            }, 2000)
+          }
+
+        }, (5 - step) * 1000)
+      }
     }
     
     else {

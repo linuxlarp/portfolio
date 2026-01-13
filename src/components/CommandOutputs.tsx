@@ -264,7 +264,7 @@ Platforms/Tools
  Cloudflare     ████████░░░░░░░░░░░░░░░░░ 30
 
   
-`)
+`),
 
 
 /*
@@ -292,5 +292,7 @@ Discord (Bots), 90
 Roblox, 70
  Git/GitHub, 85
 */
+
+source: parseOutput(` %LINK:View Source:https://github.com/linuxlarp/portfolio%`)
 
 };
