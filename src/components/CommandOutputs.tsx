@@ -1,6 +1,5 @@
 // /src/components/CommandOutputs.tsx
 
-import { parse } from "path";
 import { ReactNode } from "react";
 
 interface CommandOutput {
