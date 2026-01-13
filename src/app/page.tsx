@@ -41,8 +41,8 @@ export default function Home() {
     const bootLines = [
       { text: "[    0.000000] Booting linuxlarp.dev", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.000012] Initializing core...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
-      { text: "[    0.000234] Loading kernel modules: hobbies, portfolio, linux, hosting, cloudflare", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
-      { text: "[    0.001872] Mounting /dev/portfolio...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
+      { text: "[    0.000234] Loading kernel modules: commands, network, portfolio, images, renderer", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
+      { text: "[    0.001872] Mounting /home/larp/portfolio...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.002521] Filesystem type: ext4", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.003433] Starting init process (PID 1)...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
       { text: "[    0.004004] systemd[1]: Starting linuxlarp identity service...", className: "text-white", animated: false, statusComponent: <ConstructStatus status="OK" type="ok" /> },
@@ -121,7 +121,6 @@ export default function Home() {
     }
 
     if (line.animated && line.text) {
-      // currently typing
       if (currentLine === index) {
         const typingText = line.text.replace(/%LINK:([^:]+?):([^%]+?)%/g, (_, title) => title);
         return (

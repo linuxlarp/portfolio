@@ -1,5 +1,6 @@
 // /src/components/CommandOutputs.tsx
 
+import { parse } from "path";
 import { ReactNode } from "react";
 
 interface CommandOutput {
@@ -61,42 +62,10 @@ And when im not doing any of the above, you can probably find me:
 - Drinking more Caffine becauese: more espresso, less depresso 
 
 To learn more about me, my interests and other topics, you can use any of the following commands:
- about techstack - My Tech Stack / Skills
+ skills - My Tech Stack / Skills
  about linux - My Linux Experience and Skills
 
   `, "text-white"),
-
-"about techstack": parseOutput(`
-This is the tech stack of programming languages, platforms, skills and tools im using to develop the future:
-
-
-Languages:
-- JavaScript  & TypeScript  (Beginner) 
-- HTML5  % CSS 
-- Python 
-- Golang  (Beginner) 
-
-Tools:
-- Linux  (if you couldnt already tell) 
-- SQL 
-- Docker 
-- Cloudflare 
-- Raspberry Pi 
-- Red Hat Linux 
-- Markdown 
-- Bash 
-- Git & GitHub 
-
-Frameworks:
-- NextJS  (Hey! Fun fact, this website is built on NextJS!) 
-- FastAPI 
-- Node.js (Beginner) 󰎙
-
-Applications:
-- PyCharm 
-- Photoshop 
-
-`),
 
 "about linux": parseOutput(`
 I currently daily drive linux for all purposes. I use it for coding, schoolwork, gaming and general usage.
@@ -248,4 +217,80 @@ _)      \\.___.,|     .'   GPU: NVIDIA GeForce RTX 4060 Ti
                           Battery: N/A
                           Locale: en_US.UTF-8
 `, "text-cyan-400"),
+
+sudo: parseOutput(`
+ haha, nice try skid. so you see, this website is actually not a real linux terminal... and doesnt connect to any real server! which means you are a SKID!
+
+heres my %LINK:noskid.today certificate:https://noskid.today % (i'd recommend you get one)
+
+%IMAGE: /static/images/cert.png%
+`),
+
+blog: parseOutput(`
+Hey there! You can visit my blog, %LINK:LARPED_:https://larped.linuxlarp.dev%
+
+LARPED_ is my personal blog/newsletter where I write about Linux systems, aviation / aviation technology, and my adventures in both worlds.
+
+As a young aviator and tech entrepreneur, subscribing or even just looking at my posts helps a lot and measn the world to me!
+`),
+
+skills: parseOutput(`
+
+Skills
+-----------------------
+ Python     █████████████████████████ 90
+ HTML 5     ███████████████████░░░░░░ 70
+ SQL        █████████████████░░░░░░░░ 60
+ CSS 3      ██████████████░░░░░░░░░░░ 50
+ JavaScript ██████████░░░░░░░░░░░░░░░ 35
+ TypeScript ██████░░░░░░░░░░░░░░░░░░░ 20
+ Go         █░░░░░░░░░░░░░░░░░░░░░░░░ 5
+
+Frameworks
+-----------------------
+ FastAPI █████████████████████████ 70
+ NodeJS  ███████████░░░░░░░░░░░░░░ 30
+ NextJS  █████░░░░░░░░░░░░░░░░░░░░ 15
+ React   ██░░░░░░░░░░░░░░░░░░░░░░░ 5
+
+
+Platforms/Tools
+-----------------------
+ Discord (Bots) █████████████████████████ 90
+ Git/GitHub     ████████████████████████░ 85
+ Raspberry Pi   █████████████████████░░░░ 75
+󱊈 Roblox         ███████████████████░░░░░░ 70
+ Red Hat Linux  ██████████████░░░░░░░░░░░ 50
+ Cloudflare     ████████░░░░░░░░░░░░░░░░░ 30
+
+  
+`)
+
+
+/*
+Python, 90
+HTML5, 70
+CSS3, 50
+JavaScript, 35
+TypeScript, 20
+Go, 5
+SQL, 60
+*/
+
+/*
+FastAPI, 70
+Node, 30
+NextJS, 15
+React, 5
+*/
+
+/*
+Red Hat Linux, 50
+Raspberry Pi, 75
+Cloudflare, 30
+Discord (Bots), 90
+Roblox, 70
+ Git/GitHub, 85
+*/
+
 };

@@ -55,16 +55,18 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     }
     else if (cmd === 'help' || command == '') {
       addLine({
-        text: "Available commands are: help, clear, about, projects, fastfetch, contact",
+        text: "Available commands are: help, clear, about, projects, skills, fastfetch, contact, blog",
         className: "text-white",
         animated: false,
       });
 
       addLine({
-        text: "Available sub-commands are: about techstack, about linux",
+        text: "Available sub-commands are: about linux",
         className: "text-white",
         animated: false,
       });
+
+
     }
 
     else if (commandOutputs[cmd]) {
