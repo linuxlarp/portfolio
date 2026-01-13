@@ -59,7 +59,7 @@ And when im not doing any of the above, you can probably find me:
 - Studying 
 - Lifting 󱅝
 - Microsoft Flight Simulator 
-- Drinking more Caffine becauese: more espresso, less depresso 
+- Drinking more Caffine because: more espresso, less depresso 
 
 To learn more about me, my interests and other topics, you can use any of the following commands:
  skills - My Tech Stack / Skills
@@ -98,11 +98,11 @@ With this project, I used several skills to help properly run, develop and manag
 
 I ran the group from 2024 - 2025, before retiring the group due to burnout, school, and personal reasons. 
 The group was acknowledged by another server in this community (PTC News) and was nominated in their yearly awards for "Best Technology" and "Best Airline",
-The airline also additionally amased 900 members before being handed off to a new CEO.
+The airline also additionally amassed 900 members before being handed off to a new CEO.
 
 While i am not directly involved with the group anymore, I am proud of what I was able to accomplish with SWAPTFS and the skills I was able to develop during my time running the group. 
 
-I still host and run the website for the current CEO under a fixed contact.
+I still host and run the website for the current CEO under a fixed contract.
 
 %IMAGE: /static/images/projects/swa/awards.png%
 %IMAGE: /static/images/projects/swa/m1.webp%
@@ -113,7 +113,7 @@ I still host and run the website for the current CEO under a fixed contact.
 
 HourlyPetsTwitter 
 
-A Twitter/X bot coded in Python's tweepy library that posted hourly pictures of furry friends using the public Dog and Cat APIs. The bot was active from 2023 to 2024 before being discontinued and no longer maintaned.
+A Twitter/X bot coded in Python's tweepy library that posted hourly pictures of furry friends using the public Dog and Cat APIs. The bot was active from 2023 to 2024 before being discontinued and no longer maintained.
 
  %LINK:HourlyPetsTwitter:https://github.com/linuxlarp/HourlyPetsTwitter%
 
@@ -128,7 +128,7 @@ ERLCExampleBot 
 
 A Discord bot template originally built for Reno Tahoe Roleplay featuring Roblox OAuth2 verification, embedded API, and "some" moderation tools. Built entirely by hand with 99% no AI assistance.
 
-This project was intended to be an learning example for Roblox Roleplay communities and ERLC developers, it provides a basic bot example with direct communication to the Police Roleplay Community API.
+This project was intended to be a learning example for Roblox Roleplay communities and ERLC developers, it provides a basic bot example with direct communication to the Police Roleplay Community API.
 
 No longer maintained as of 2025.
 
@@ -148,7 +148,7 @@ The website was never finished, but overall was a great learning experience for 
 
 My Personal Website 
 
-My personal portfolio website, built with NextJS  and TypeScript . This website serves as a hub for my projects, about me section, and contact information. (You're visting it right now!)
+My personal portfolio website, built with NextJS  and TypeScript . This website serves as a hub for my projects, about me section, and contact information. (You're visiting it right now!)
 It also features as interactive web-terminal
 
  %LINK:Portfolio Website:https://linuxlarp.dev%
@@ -231,7 +231,7 @@ Hey there! You can visit my blog, %LINK:LARPED_:https://larped.linuxlarp.dev%
 
 LARPED_ is my personal blog/newsletter where I write about Linux systems, aviation / aviation technology, and my adventures in both worlds.
 
-As a young aviator and tech entrepreneur, subscribing or even just looking at my posts helps a lot and measn the world to me!
+As a young aviator and tech entrepreneur, subscribing or even just looking at my posts helps a lot and means the world to me!
 `),
 
 skills: parseOutput(`
@@ -314,7 +314,7 @@ hardware: parseOutput(`
 -------------------------
  Motherboard: GIGABYTE B650M WIFI GAMING PLUS
 󰻠 CPU: AMD Ryzen 7700X
- RAM: TEAMGROUP T-FORCE Delta RGB DDR5 (16GB x 1) 48GB 
+ RAM: TEAMGROUP T-FORCE Delta RGB DDR5 48GB (16GB x 3)
  GPU: NVIDIA RTX 4060Ti
  PSU: MSI MAG A650BN 650W
 󰇅 Case: Proprietary Prebuilt
