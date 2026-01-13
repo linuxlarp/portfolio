@@ -42,7 +42,7 @@ function parseOutput(text: string, className = "text-white", animated = false): 
 export const commandOutputs: Record<string, CommandOutput[]> = {
   "about": parseOutput(`
 
-%IMAGE: /static/images/pfp.png%
+%IMAGE: /static/images/pfp.webp%
 
 Hello there! My name is linuxlarp or linuxlarper.
 
@@ -76,14 +76,14 @@ My Linux Setup:
 - WM: Hyprland 
 - Shell: fish 󰈺
 
-%IMAGE: /static/images/rice.png%
+%IMAGE: /static/images/rice.webp%
 
 `),
 
   projects: parseOutput(`
 Here are some of the projects i've worked on over the years.
   
-%IMAGE: /static/images/gradient.png%
+%IMAGE: /static/images/gradient.webp%
 
 Southwest Airlines PTFS 󰋑
 
@@ -103,12 +103,12 @@ While i am not directly involved with the group anymore, I am proud of what I wa
 
 I still host and run the website for the current CEO under a fixed contract.
 
-%IMAGE: /static/images/projects/swa/awards.png%
+%IMAGE: /static/images/projects/swa/awards.webp%
 %IMAGE: /static/images/projects/swa/m1.webp%
 
  %LINK:SWAPTFS Website:https://southwestptfs.com%
 
-%IMAGE: /static/images/gradient.png%
+%IMAGE: /static/images/gradient.webp%
 
 HourlyPetsTwitter 
 
@@ -121,7 +121,7 @@ Links:
 » 󰩃 %LINK:Dog API:https://dog.ceo/dog-api%
 » 󰄛 %LINK:Cat API:https://thecatapi.com/%
 
-%IMAGE: /static/images/gradient.png%
+%IMAGE: /static/images/gradient.webp%
 
 ERLCExampleBot 
 
@@ -133,7 +133,7 @@ No longer maintained as of 2025.
 
  %LINK:ERLCExampleBot:https://github.com/linuxlarp/ERLCBotExample%
 
-%IMAGE: /static/images/gradient.png%
+%IMAGE: /static/images/gradient.webp%
 
 AAWeb 
 
@@ -143,7 +143,7 @@ The website was never finished, but overall was a great learning experience for 
 
  %LINK:AAWeb:https://github.com/linuxlarp/AAWeb %
 
-%IMAGE: /static/images/gradient.png%
+%IMAGE: /static/images/gradient.webp%
 
 My Personal Website 
 
@@ -153,7 +153,7 @@ It also features as interactive web-terminal
  %LINK:Portfolio Website:https://linuxlarp.dev%
  %LINK:GitHub Repository (Source Code):https://github.com/linuxlarp/portfolio%
 
-%IMAGE: /static/images/gradient.png%
+%IMAGE: /static/images/gradient.webp%
 
 Dats Square 󰸰
 
@@ -167,7 +167,7 @@ Our most sucessful year was 2024, where we had over 150 concurrent players durin
 Unfortunately, due to ROBLOX's moderation being incredibly sensitive and broken. The place was taken down for "Child Endangerment" in early 2025, and we were unable to recover it.
 (No, we didnt actually endanger any children lmao, it was just ROBLOX being ROBLOX)
 
-%IMAGE: /static/images/projects/dats/2025.png%
+%IMAGE: /static/images/projects/dats/2025.webp%
 
 Videos:
 »  %LINK:2025 Full Livestream:https://www.youtube.com/watch?v=3_-nTuQAcvQ%
@@ -176,7 +176,7 @@ Videos:
 »  %LINK:2024 Teaser:https://www.youtube.com/watch?v=pNf3bo2Hm_w%
 »  %LINK:Video from OG Creator whosdatguy:https://www.youtube.com/watch?v=FCpDJpXfEN0%
 
-%IMAGE: /static/images/gradient.png%
+%IMAGE: /static/images/gradient.webp%
   `, "text-white"),
 
   contact: parseOutput(`
@@ -222,7 +222,7 @@ sudo: parseOutput(`
 
 heres my %LINK:noskid.today certificate:https://noskid.today % (i'd recommend you get one)
 
-%IMAGE: /static/images/cert.png%
+%IMAGE: /static/images/cert.webp%
 `),
 
 blog: parseOutput(`
@@ -320,7 +320,7 @@ hardware: parseOutput(`
 󰈐 AIO: Proprietary with custom CORSAIR ICUE LINK RX140 140mm (2x)
  Storage: 2TB Generic SSD, 1TB Samsung 990 PRO
 
-%IMAGE: /static/images/build.png%
+%IMAGE: /static/images/build.webp%
 
 󰟑 Homelab:
 -------------------------
@@ -334,7 +334,7 @@ hardware: parseOutput(`
 󰈐 Cooling: Single Fan Blower Motor
  Storage: 1TB SATA SSD 
 
-%IMAGE: /static/images/hl.jpg%
+%IMAGE: /static/images/hl.webp%
 
 `)
 

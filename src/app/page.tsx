@@ -163,20 +163,34 @@ export default function Home() {
     );
   };
 
-  const renderCommandInput = () => (
-    <div className="flex items-center gap-2 mt-2">
-      <span className="text-green-400">guest@linuxlarp:~$</span>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        onKeyDown={(e) => e.key === 'Enter' && handleCommand(inputValue)}
-        className="bg-transparent text-green-400 outline-none flex-1 font-mono"
-        autoFocus
-        spellCheck={false}
-      />
-    </div>
-  );
+  const renderCommandInput = () => {
+    const { navigateHistory } = useTerminal();
+    
+    return (
+      <div className="flex items-center gap-2 mt-2">
+        <span className="text-green-400">guest@linuxlarp:~$</span>
+        <input
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleCommand(inputValue);
+            } else if (e.key === 'ArrowUp') {
+              e.preventDefault();
+              navigateHistory('up');
+            } else if (e.key === 'ArrowDown') {
+              e.preventDefault();
+              navigateHistory('down');
+            }
+          }}
+          className="bg-transparent text-green-400 outline-none flex-1 font-mono"
+          autoFocus
+          spellCheck={false}
+        />
+      </div>
+    );
+  };
 
   return (
     <div className="min-h-screen bg-black font-mono p-8">

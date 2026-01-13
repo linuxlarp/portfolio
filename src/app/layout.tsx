@@ -27,6 +27,9 @@ const nerdFont = localFont({
 export const metadata: Metadata = {
   title: "linuxlarp.dev",
   description: "Portfolio and projects",
+  icons: {
+    icon: '/static/images/pfp.webp',
+  },
 };
 
 export default function RootLayout({
