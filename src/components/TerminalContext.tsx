@@ -53,9 +53,15 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     if (cmd === 'clear') {
       setTimeout(() => clearLines(), 100);
     }
-    else if (cmd === 'help') {
+    else if (cmd === 'help' || command == '') {
       addLine({
         text: "Available commands are: help, clear, about, projects, fastfetch, contact",
+        className: "text-white",
+        animated: false,
+      });
+
+      addLine({
+        text: "Available sub-commands are: about techstack, about linux",
         className: "text-white",
         animated: false,
       });
@@ -67,9 +73,8 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
       });
     }
 
-
     else if (cmd === '') {
-      // Do nothing, it gets quiet in here. Dont you think?
+      // Do nothing, it gets quiet in here. Dont you think? (Also redirects to help)
     }
     
     else {
