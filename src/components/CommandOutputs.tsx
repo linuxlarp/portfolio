@@ -331,8 +331,8 @@ hardware: parseOutput(`
  RAM: 4GB DDR3
  GPU: Intel® HD Graphics 2500
  PSU: DELL Propietary 250W
-󰇅 Case: DELL Propietary
-󰈐 Cooling: DELL Propietary
+󰇅 Case: OPTIPLEX 7010 SFF
+󰈐 Cooling: Single Fan Blower Motor
  Storage: 1TB SATA SSD 
 
 %IMAGE: /static/images/hl.jpg%
