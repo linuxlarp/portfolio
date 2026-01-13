@@ -56,8 +56,9 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
 
     else if (cmd === 'help' || command == '') {
       addLine({
-        text: `Available commands are: help, clear, about, projects, skills, fastfetch, contact, blog, 
-        source, exit, coffee, secret, whoami, hostname, hardware`,
+        text: `
+Available commands are: help, clear, about, projects, skills, fastfetch, contact, blog, 
+source, exit, coffee, secret, whoami, hostname, hardware`,
         className: "text-white",
         animated: false,
       });
@@ -100,7 +101,7 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     }
 
     else if (cmd == 'secret') {
-      window.location.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1' // Rickroll!
+      window.location.href = 'https://youtu.be/xvFZjo5PgG0?si=iWqmbHQn8fRhZ2e2'
     }
     
     else {
