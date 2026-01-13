@@ -2,7 +2,7 @@
 
 'use client'
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useTerminal } from "../components/TerminalContext";
 import TerminalLine from "../components/Terminal";
 
@@ -36,6 +36,12 @@ export default function Home() {
     setInputValue, 
     handleCommand 
   } = useTerminal();
+
+  const terminalEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    terminalEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [lines, currentLine]);
 
   useEffect(() => {
     const bootLines = [
@@ -183,6 +189,7 @@ export default function Home() {
           )
         )}
         {currentLine >= lines.length && renderCommandInput()}
+        <div ref={terminalEndRef} />
       </div>
     </div>
   );
