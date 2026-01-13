@@ -293,6 +293,51 @@ Roblox, 70
  Git/GitHub, 85
 */
 
-source: parseOutput(` %LINK:View Source:https://github.com/linuxlarp/portfolio%`)
+source: parseOutput(` %LINK:View Source:https://github.com/linuxlarp/portfolio%`),
+whoami: parseOutput(`guest`),
+coffee: parseOutput(`
+      )  (
+     (   ) )
+      ) ( (
+ mrf_______)_
+ .-'---------|  
+( C|/\/\/\/\/|
+ '-./\/\/\/\/|
+   '_________'
+    '-------'
+
+`, "text-orange-950"),
+hostname: parseOutput(`linuxlarp.dev`),
+hardware: parseOutput(`
+
+󰇅 My Full Setup:
+-------------------------
+ Motherboard: GIGABYTE B650M WIFI GAMING PLUS
+󰻠 CPU: AMD Ryzen 7700X
+ RAM: TEAMGROUP T-FORCE Delta RGB DDR5 (16GB x 1) 48GB 
+ GPU: NVIDIA RTX 4060Ti
+ PSU: MSI MAG A650BN 650W
+󰇅 Case: Proprietary Prebuilt
+󰈐 AIO: Proprietary with custom CORSAIR ICUE LINK RX140 140mm (2x)
+ Storage: 2TB Generic SSD, 1TB Samsung 990 PRO
+
+%IMAGE: /static/images/build.png%
+
+󰟑 Homelab:
+-------------------------
+ Make: DELL
+󰣩 Model: OPTIPLEX 7010
+󰻠 CPU: i3-3220
+ RAM: 4GB DDR3
+ GPU: Intel® HD Graphics 2500
+ PSU: DELL Propietary 250W
+󰇅 Case: DELL Propietary
+󰈐 Cooling: DELL Propietary
+ Storage: 1TB SATA SSD 
+
+%IMAGE: /static/images/hl.jpg%
+
+`)
+
 
 };
