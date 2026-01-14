@@ -25,10 +25,25 @@ const nerdFont = localFont({
 
 
 export const metadata: Metadata = {
-  title: "linuxlarp.dev",
-  description: "Portfolio and projects",
+  openGraph: {
+    title: "linuxlarp",
+    url: "https://linuxlarp.dev",
+    siteName: "linuxlarp.dev",
+    description: "The offical terminal-based portfolio for linuxlarp. Includes experience, projects, skills and more about my linux setup and rice!",
+    images: [
+      {
+        url: 'https://linuxlarp.dev/static/images/pfp.gif',
+        width: 128,
+        height: 128,
+        alt: 'Rolling tux :D'
+      }
+    ],
+    locale: 'en_US',
+    type: 'website'
+  },
+
   icons: {
-    icon: '/static/images/pfp.webp',
+    icon: '/static/images/favicon.ico',
   },
 };
 

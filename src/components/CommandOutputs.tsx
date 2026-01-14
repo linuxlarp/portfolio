@@ -42,7 +42,7 @@ function parseOutput(text: string, className = "text-white", animated = false): 
 export const commandOutputs: Record<string, CommandOutput[]> = {
   "about": parseOutput(`
 
-%IMAGE: /static/images/pfp.webp%
+%IMAGE: /static/images/downsize.gif%
 
 Hello there! My name is linuxlarp or linuxlarper.
 
@@ -67,7 +67,7 @@ To learn more about me, my interests and other topics, you can use any of the fo
   `, "text-white"),
 
 "about linux": parseOutput(`
-I currently daily drive linux for all purposes. I use it for coding, schoolwork, gaming and general usage.
+I currently daily drive linux for all use purposes. I use it for coding, schoolwork and college, gaming and general usage.
 
 My Linux Setup:
 - Distro: CachyOS x86_64 󰣇
@@ -77,6 +77,9 @@ My Linux Setup:
 - Shell: fish 󰈺
 
 %IMAGE: /static/images/rice.webp%
+
+You can grab my dotfiles @
+ %LINK:Nord Hyprland (linuxlarp):https://github.com/linuxlarp/nord-hyprland%
 
 `),
 
