@@ -101,6 +101,35 @@ export default function Home() {
     return parts;
   };
 
+  const renderDropdown = (txt: string) => { // Begin working on this
+    const regex = /%DROPDOWN:([^%]+?)%([\s\S]*?)%DROPDOWN%/g;
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    let m: RegExpExecArray | null;
+    let key = 0;
+
+    while ((m = regex.exec(txt)) !== null) {
+      const idx = m.index;
+      if (idx > lastIndex) {
+        parts.push(txt.slice(lastIndex, idx));
+      }
+      parts.push(
+        <details key={`detail-${key++}`} className="">
+          {m[1].trim()}
+        </details>
+      );
+
+      lastIndex = idx + m[0].length;
+    }
+
+    if (lastIndex < txt.length) {
+      parts.push(txt.slice(lastIndex));
+    }
+
+    return parts;
+  };
+
+
   const renderTerminalLine = (line: typeof lines[0], index: number) => {
     const showStatus = line.statusComponent && currentLine > index;
 
@@ -125,6 +154,7 @@ export default function Home() {
         </>
       );
     }
+
 
     if (line.animated && line.text) {
       if (currentLine === index) {

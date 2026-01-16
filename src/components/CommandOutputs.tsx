@@ -339,7 +339,12 @@ hardware: parseOutput(`
 
 %IMAGE: /static/images/hl.webp%
 
-`)
+`),
 
+test: parseOutput(`
+  %DROPDOWN:TEST1234%
+    Test
+  %DROPDOWN%
+`) // Begin work
 
 };
