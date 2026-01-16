@@ -42,7 +42,7 @@ function parseOutput(text: string, className = "text-white", animated = false): 
 export const commandOutputs: Record<string, CommandOutput[]> = {
   "about": parseOutput(`
 
-%IMAGE: /static/images/downsize.gif%
+%IMAGE: /static/images/pfp.gif%
 
 Hello there! My name is linuxlarp or linuxlarper.
 
@@ -62,7 +62,7 @@ And when im not doing any of the above, you can probably find me:
 
 To learn more about me, my interests and other topics, you can use any of the following commands:
  skills - My Tech Stack / Skills
- about linux - My Linux Experience and Skills
+ about linux - My Linux Desktop Setup
 
   `, "text-white"),
 
