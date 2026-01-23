@@ -92,7 +92,7 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
       addLine({
         text: `
 Available commands are: help, clear, about, projects, skills, fastfetch, contact, blog, 
-source, exit, coffee, secret, whoami, hostname, hardware`,
+source, exit, coffee, secret, whoami, hostname, hardware, status`,
         className: "text-white",
         animated: false,
       });

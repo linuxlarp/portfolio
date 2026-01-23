@@ -54,6 +54,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="theme-color" content="#628df0" />
+
       <body
         className={` ${nerdFont.variable} antialiased bg-black`}
       >

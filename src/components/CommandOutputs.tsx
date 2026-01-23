@@ -42,7 +42,7 @@ function parseOutput(text: string, className = "text-white", animated = false): 
 export const commandOutputs: Record<string, CommandOutput[]> = {
   "about": parseOutput(`
 
-%IMAGE: /static/images/downsize.gif%
+%IMAGE: /static/images/pfp_medium.webp%
 
 Hello there! My name is linuxlarp or linuxlarper.
 
@@ -62,21 +62,22 @@ And when im not doing any of the above, you can probably find me:
 
 To learn more about me, my interests and other topics, you can use any of the following commands:
  skills - My Tech Stack / Skills
- about linux - My Linux Experience and Skills
+ about linux - My Linux Desktop Setup
 
   `, "text-white"),
 
 "about linux": parseOutput(`
-I currently daily drive linux for all use purposes. I use it for coding, schoolwork and college, gaming and general usage.
+I currently daily drive linux on both my Computer and Thinkpad X1 Carbon for all use purposes. I use it for coding, schoolwork and college, gaming and general usage.
 
 My Linux Setup:
-- Distro: CachyOS x86_64 󰣇
+- Distro: CachyOS x86_64 󰣇 
 - Kernel: Linux-cachyos 
 - Terminal: ghostty 󱙝
 - WM: Hyprland 
 - Shell: fish 󰈺
 
 %IMAGE: /static/images/rice.webp%
+%IMAGE: /static/images/thinkpad_rice.webp%
 
 You can grab my dotfiles @
  %LINK:Nord Hyprland (linuxlarp):https://github.com/linuxlarp/nord-hyprland%
@@ -103,6 +104,10 @@ The group was acknowledged by another server in this community (PTC News) and wa
 The airline also additionally amassed 900 members before being handed off to a new CEO.
 
 While i am not directly involved with the group anymore, I am proud of what I was able to accomplish with SWAPTFS and the skills I was able to develop during my time running the group. 
+
+The code for the backend of the website is now available for free under the %LINK:MIT:https://en.wikipedia.org/wiki/MIT_License% license.
+
+ %LINK:Backend Codebase:https://github.com/linuxlarp/swaptfs-backend%
 
 I still host and run the website for the current CEO under a fixed contract.
 
@@ -325,6 +330,18 @@ hardware: parseOutput(`
 
 %IMAGE: /static/images/build.webp%
 
+ Thinkpad:
+-------------------------
+ Make: Lenovo
+󰣩 Model: X1 Carbon, Gen 7
+󰻠 CPU: Intel i5-8365U "Coffelake"
+󰻠 GPU: Integrated
+ RAM: 16GB DDR4
+ Storage: 512GB Generic SSD
+
+%IMAGE: /static/images/thinkpad.webp%
+
+
 󰟑 Homelab:
 -------------------------
  Make: DELL
@@ -332,14 +349,20 @@ hardware: parseOutput(`
 󰻠 CPU: i3-3220
  RAM: 4GB DDR3
  GPU: Intel® HD Graphics 2500
- PSU: DELL Propietary 250W
+ PSU: DELL Propietary 250
 󰇅 Case: OPTIPLEX 7010 SFF
 󰈐 Cooling: Single Fan Blower Motor
  Storage: 1TB SATA SSD 
 
 %IMAGE: /static/images/hl.webp%
 
-`)
+`),
 
+status: parseOutput(`
+
+This website acting slow or not working or another service under LARPED_ Techlogies? You can check our status page using the link below.
+
+  %LINK:Web Services Status Page:https://status.linuxlarp.dev%
+`) 
 
 };
