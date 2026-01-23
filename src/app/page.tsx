@@ -2,7 +2,7 @@
 
 'use client'
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState} from "react";
 import { useTerminal } from "../components/TerminalContext";
 import TerminalLine from "../components/Terminal";
 
@@ -40,7 +40,7 @@ export default function Home() {
   const terminalEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    terminalEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+      terminalEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [lines, currentLine]);
 
   useEffect(() => {
