@@ -91,7 +91,7 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     else if (cmd === 'help' || command == '') {
       addLine({
         text: `
-Available commands are: help, clear, about, projects, skills, fastfetch, contact, blog, 
+Available commands are: help, clear, about, projects, skills, fastfetch, contact,
 source, exit, coffee, secret, whoami, hostname, hardware, status`,
         className: "text-white",
         animated: false,

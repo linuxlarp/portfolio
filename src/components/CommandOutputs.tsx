@@ -75,12 +75,10 @@ My Linux Setup:
 - Terminal: ghostty 󱙝
 - WM: Hyprland 
 - Shell: fish 󰈺
+- Desktop Shell: %LINK:Noctalia:https://noctalia.dev% 󰏒
 
 %IMAGE: /static/images/rice.webp%
-%IMAGE: /static/images/thinkpad_rice.webp%
-
-You can grab my dotfiles @
- %LINK:Nord Hyprland (linuxlarp):https://github.com/linuxlarp/nord-hyprland%
+%IMAGE: /static/images/thinkpad.webp%
 
 `),
 
@@ -233,13 +231,6 @@ heres my %LINK:noskid.today certificate:https://noskid.today % (i'd recommend yo
 %IMAGE: /static/images/cert.webp%
 `),
 
-blog: parseOutput(`
-Hey there! You can visit my blog, %LINK:LARPED_:https://larped.linuxlarp.dev%
-
-LARPED_ is my personal blog/newsletter where I write about Linux systems, aviation / aviation technology, and my adventures in both worlds.
-
-As a young aviator and tech entrepreneur, subscribing or even just looking at my posts helps a lot and means the world to me!
-`),
 
 skills: parseOutput(`
 
@@ -251,7 +242,6 @@ Skills
  CSS 3      ██████████████░░░░░░░░░░░ 50
  JavaScript ██████████░░░░░░░░░░░░░░░ 35
  TypeScript ██████░░░░░░░░░░░░░░░░░░░ 20
- Go         █░░░░░░░░░░░░░░░░░░░░░░░░ 5
 
 Frameworks
 -----------------------
@@ -280,7 +270,6 @@ HTML5, 70
 CSS3, 50
 JavaScript, 35
 TypeScript, 20
-Go, 5
 SQL, 60
 */
 
