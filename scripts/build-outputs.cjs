@@ -12,8 +12,15 @@ function buildOutputs() {
 
   files.forEach((filename) => {
     if (!filename.endsWith(".txt")) {
-    } else {
-      return;
+      const isDirectory = fs.statSync(filename).isDirectory();
+
+      if (isDirectory) {
+        const subFiles = fs.readdirSync(filePath);
+
+        subFiles.forEach((subFile) => {});
+      } else {
+        return;
+      }
     }
 
     const filePath = path.join(outputsDir, filename);
