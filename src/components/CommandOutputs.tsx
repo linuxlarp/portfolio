@@ -1,5 +1,6 @@
 // /src/components/CommandOutputs.tsx
 import { ReactNode } from "react";
+import generatedOutputs from "../generated/commandOutputs.json";
 
 interface CommandOutput {
   text?: string;
@@ -40,4 +41,12 @@ function parseOutput(
   });
 }
 
-export const commandOutputs: Record<string, CommandOutput[]> = {};
+export const commandOutputs: Record<string, CommandOutput[]> = Object.entries(
+  generatedOutputs,
+).reduce(
+  (acc, [key, text]) => {
+    acc[key] = parseOutput(text as string);
+    return acc;
+  },
+  {} as Record<string, CommandOutput[]>,
+);
