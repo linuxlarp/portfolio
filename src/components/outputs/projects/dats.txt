@@ -1,0 +1,22 @@
+Dats Square 󰸰
+
+Dat's Square was a ROBLOX game I worked on to create a virtual new-years hangout space for friends and community members. It featured a virtual fireworks show, music, and social areas for players to interact and celebrate the new year together.
+And the best of all, it was synced up to the real world ball drop in New York City! The event feature multiple timezones so players from around the world could join in on the fun.
+
+The event ran from 2021 to 2025, I began helping with my coding skills in Lua , and FastAPI  to help manage a simple backend server for the game.
+
+Our most sucessful year was 2024, where we had over 150 concurrent players during the ball drop event
+
+Unfortunately, due to ROBLOX's moderation being incredibly sensitive and broken. The place was taken down for "Child Endangerment" in early 2025, and we were unable to recover it.
+(No, we didnt actually endanger any children lmao, it was just ROBLOX being ROBLOX)
+
+%IMAGE: /static/images/projects/dats/2025.webp%
+
+Videos:
+»  %LINK:2025 Full Livestream:https://www.youtube.com/watch?v=3_-nTuQAcvQ%
+»  %LINK:2025 Balldrop Test:https://www.youtube.com/watch?v=0kFPkA2LbP8%
+»  %LINK:2024 Balldrop Recap:https://www.youtube.com/watch?v=EwwTsb7t3O8%
+»  %LINK:2024 Teaser:https://www.youtube.com/watch?v=pNf3bo2Hm_w%
+»  %LINK:Video from OG Creator whosdatguy:https://www.youtube.com/watch?v=FCpDJpXfEN0%
+
+%IMAGE: /static/images/gradient.webp%

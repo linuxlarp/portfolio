@@ -1,0 +1,11 @@
+ERLCExampleBot 
+
+A Discord bot template originally built for Reno Tahoe Roleplay featuring Roblox OAuth2 verification, embedded API, and "some" moderation tools. Built entirely by hand with 99% no AI assistance.
+
+This project was intended to be a learning example for Roblox Roleplay communities and ERLC developers, it provides a basic bot example with direct communication to the Police Roleplay Community API.
+
+No longer maintained as of 2025.
+
+ %LINK:ERLCExampleBot:https://github.com/linuxlarp/ERLCBotExample%
+
+%IMAGE: /static/images/gradient.webp%

@@ -1,0 +1,12 @@
+HourlyPetsTwitter 
+
+A Twitter/X bot coded in Python's tweepy library that posted hourly pictures of furry friends using the public Dog and Cat APIs. The bot was active from 2023 to 2024 before being discontinued and no longer maintained.
+
+ %LINK:HourlyPetsTwitter:https://github.com/linuxlarp/HourlyPetsTwitter%
+
+Links:
+»  %LINK:Tweepy GitHub:https://github.com/tweepy/tweepy%
+» 󰩃 %LINK:Dog API:https://dog.ceo/dog-api%
+» 󰄛 %LINK:Cat API:https://thecatapi.com/%
+
+%IMAGE: /static/images/gradient.webp%
