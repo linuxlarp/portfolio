@@ -1,1 +1,12 @@
-Does this differ from the main one?
+My Projects
+
+Here are all of the available projects of mine you can view, and a brief description of each
+
+%IMAGE: /static/images/gradient.webp%
+
+projects aaweb - A quick barebones, HTML/CSS/JS website with a backend for a virtual airline that was never finished.
+projects dats - A ROBLOX New Years Game based in New York City, recreated on roblox platform as a community event
+projects erlc_example_bot - A bot template for ERLC communities i made for Reno Tahoe Roleplay to help provide basic remote server management for servers
+projects portfolio - My custom portfolio (you're visting it right now!)
+projects hourlypets - A small Twitter/X Bot
+projects swaptfs - My experience running a virtual airline and making the websites and website backend.

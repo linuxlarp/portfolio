@@ -1,7 +1,3 @@
-Here are some of the projects i've worked on over the years.
-
-%IMAGE: /static/images/gradient.webp%
-
 Southwest Airlines PTFS 󰋑
 
 SWAPTFS was a personal project, attempting to realistically recreate the operations of the IRL Southwest Airlines in Roblox's PTFS (Pilot Training Flight Simulator)
