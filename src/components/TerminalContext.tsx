@@ -92,14 +92,32 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
     } else if (cmd === "help" || command == "") {
       addLine({
         text: `
-Available commands are: help, clear, about, projects, skills, fastfetch, contact,
-source, exit, coffee, secret, whoami, hostname, hardware, status`,
+
+Available commands are:
+help - Displays this message
+clears - Clears all messages in the TerminalContext
+about - Displays about me of linuxlarp
+projects - Shows a list of my projects you can view by typing each individual name in
+skills - Shows my skillset of languages, tools and platforms
+contact - Shows where you can contact me and social media platforms
+source - Shows source code of this repo
+exit - Exit this website
+whoami - Shows the currently authenticated useTerminal
+hostname - Shows the hostname of this site.
+hardware - Shows my hardware and setup
+status - Refers you to the status page of LARPED_ Technologies.
+
+`,
         className: "text-white",
         animated: false,
       });
 
       addLine({
-        text: "Available sub-commands are: about linux",
+        text: `
+Available sub-commands are:
+about linux - Display my Linux setups (Desktop, Server)
+
+`,
         className: "text-white",
         animated: false,
       });

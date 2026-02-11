@@ -23,8 +23,6 @@ function buildOutputs() {
         const subFiles = fs.readdirSync(subFilePath);
 
         subFiles.forEach((subFile) => {
-          console.log(`${subFilePath}/${subFile}`);
-
           const content = fs.readFileSync(`${subFilePath}/${subFile}`, "UTF-8");
           const commandName = `${filename} ${subFile}`.replace(".txt", "");
 
