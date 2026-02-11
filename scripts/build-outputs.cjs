@@ -12,24 +12,41 @@ function buildOutputs() {
 
   files.forEach((filename) => {
     if (!filename.endsWith(".txt")) {
-      const isDirectory = fs.statSync(filename).isDirectory();
+      console.log("Detected non .txt file, checking if sub-command directory");
+      const isDirectory = fs
+        .statSync(`${outputsDir}/${filename}`)
+        .isDirectory();
 
       if (isDirectory) {
-        const subFiles = fs.readdirSync(filePath);
+        // Handle sub-commands differently by default
+        const subFilePath = path.join(`${outputsDir}/${filename}`);
+        const subFiles = fs.readdirSync(subFilePath);
 
-        subFiles.forEach((subFile) => {});
+        subFiles.forEach((subFile) => {
+          console.log(`${subFilePath}/${subFile}`);
+
+          const content = fs.readFileSync(`${subFilePath}/${subFile}`, "UTF-8");
+          const commandName = `${filename} ${subFile}`.replace(".txt", "");
+
+          console.log(
+            `Building sub-command ${subFilePath} as ${commandName}...`,
+          );
+
+          outputs[commandName] = content;
+        });
       } else {
         return;
       }
+    } else {
+      // Normal output (non directory/sub command)
+      const filePath = path.join(outputsDir, filename);
+      const content = fs.readFileSync(filePath, "UTF-8");
+      const commandName = filename.replace(".txt", "");
+
+      console.log(`Building ${filePath} as ${commandName}...`);
+
+      outputs[commandName] = content;
     }
-
-    const filePath = path.join(outputsDir, filename);
-    const content = fs.readFileSync(filePath, "UTF-8");
-    const commandName = filename.replace(".txt", "");
-
-    console.log(`Building ${filePath} as ${commandName}...`);
-
-    outputs[commandName] = content;
   });
 
   console.log(`Done building!`);
