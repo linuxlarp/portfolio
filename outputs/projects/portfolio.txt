@@ -1,0 +1,9 @@
+My Personal Website 
+
+My personal portfolio website, built with NextJS  and TypeScript . This website serves as a hub for my projects, about me section, and contact information. (You're visiting it right now!)
+It also features as interactive web-terminal
+
+ %LINK:Portfolio Website:https://linuxlarp.dev%
+ %LINK:GitHub Repository (Source Code):https://github.com/linuxlarp/portfolio%
+
+%IMAGE: /static/images/gradient.webp%

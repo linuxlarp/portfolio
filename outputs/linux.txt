@@ -1,0 +1,30 @@
+I currently daily drive linux on both my Computer and Thinkpad X1 Carbon for all use purposes. I use it for coding, schoolwork and college, gaming and general usage.
+
+My Linux Setup (Desktop):
+- Distro: %LINK:Artix Linux:https://artixlinux.org% 󰣇
+- Kernel: linux-lts 
+- Terminal: ghostty 󱙝
+- WM: Hyprland 
+- Shell: fish 󰈺
+- Desktop Shell: %LINK:Noctalia:https://noctalia.dev% 󰏒
+
+%IMAGE: /static/images/rice.webp%
+
+
+My Linux Setup (Thinkpad):
+- Distro: %LINK:Artix Linux:https://artixlinux.org% 󰣇
+- Kernel: linux-zen 
+- Terminal: foot 󰽒
+- WM: Hyprland 
+- Shell: fish 󰈺
+- Desktop Shell: %LINK:Noctalia:https://noctalia.dev% 󰏒
+
+%IMAGE: /static/images/thinkpad_rice.webp%
+
+
+My Linux Server Setup (Homelab):
+- Distro: %LINK:Debian:https://debian.org% 
+- Kernel: linux 
+- Shell: bash 
+
+%IMAGE: /static/images/homelab_setup.webp%

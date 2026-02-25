@@ -1,0 +1,9 @@
+AAWeb 
+
+A simple, HTML , CSS  and JS  website for the American Airlines PTFS Group. The website was never finished, but has a basic authentication manager and startpage.
+
+The website was never finished, but overall was a great learning experience for web development and working with HTML, CSS and JavaScript.
+
+ %LINK:AAWeb:https://github.com/linuxlarp/AAWeb %
+
+%IMAGE: /static/images/gradient.webp%

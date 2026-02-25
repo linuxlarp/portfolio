@@ -1,0 +1,31 @@
+Skills
+Here are all of my skills, including what I’m confident in and what I’m actively learning.
+------------------------------------------------------------
+
+Languages
+------------------------------------------------------------
+ Python        > Advanced
+ HTML5         > Intermediate
+ SQL           > Intermediate
+ CSS3          > Intermediate
+ Lua/LuaU      > Intermediate
+ JavaScript    > Beginner–Intermediate
+ TypeScript    > Learning
+ Rust          > Learning
+
+Frameworks / Runtimes
+------------------------------------------------------------
+ FastAPI       > Intermediate–Advanced
+ NodeJS        > Beginner–Intermediate
+ NextJS        > Learning
+ React         > Learning
+
+Platforms / Tools / OS
+------------------------------------------------------------
+ Discord (Bots/API)        > Advanced
+ Git                       > Advanced
+ Raspberry Pi / Homelab    > Intermediate–Advanced
+󱊈 Roblox (Lua / Systems)    > Intermediate–Advanced
+ Linux                     > Intermediate-Advanced
+ Cloudflare                > Beginner–Intermediate
+ Docker                    > Intermediate

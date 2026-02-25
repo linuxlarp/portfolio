@@ -1,0 +1,20 @@
+%IMAGE: /static/images/pfp_medium.webp%
+
+Hello there! I'm linuxlarp. Also known as ThinkpadEnjoyer
+
+I'm a 15yo, self-taught developer with a interest in aviation, open-source software, and the right-to-repair movement. I'm currently working towards my Private Pilot License (PPL), under the FAA while completing dual-credit aviation courses through my local highschool.
+
+Most of my projects are built for Roblox and Discord, where i develop systems, backend logic, automation tools and community-focused features. While many of my applications live on those platforms. The underlying work involves real software development, scripting, systems design. Debugging and scalability.
+
+Im continuing to branch out into broader software engineering, including backend services. Linux systems, and hands on SysAdmin. I enjoy building projects that improve quality of life, solve practical problems, or fill gaps where better tools are needed.
+
+I also run a Linux-focused social media page with 2,500+ combined followers, and 1M+ views on both Tiktok and Instagram. Where i post Linux jokes, Commentary and "larping" content, where I just either flex fastfetch or technology.
+
+%IMAGE: /static/images/gradient.webp%
+
+To learn more about me, my interests and other topics, you can use any of the following commands:
+ skills - My Tech Stack / Skills
+ linux - My Linux Setups
+
+Unsure what other commands there are? run:
+󰋖 help
