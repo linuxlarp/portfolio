@@ -22,5 +22,4 @@ See https://creativecommons.org/licenses/by-nc/4.0/.
 
 ## Acknowledgements
 - [NextJS](https://nextjs.org)
-- [AsciiBar](https://asciibar.ozbot.si/?ref=producthunt)
 - [Nerd Fonts](https://nerdfonts.com)
