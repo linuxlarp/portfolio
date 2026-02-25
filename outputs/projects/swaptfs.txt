@@ -1,0 +1,28 @@
+Southwest Airlines PTFS 󰋑
+
+SWAPTFS was a personal project, attempting to realistically recreate the operations of the IRL Southwest Airlines in Roblox's PTFS (Pilot Training Flight Simulator)
+
+With this project, I used several skills to help properly run, develop and manage the group.  These skills include:
+- Using Photoshop  to create advertisements, server embeds, logos, and other graphics for the group.
+- Using Discord  to manage the community, communicate with members, and provide support.
+- Using Python , TypeScript , JavaScript , and FastAPI  & NextJS  to create a fully functional website.
+- Using my knowledge of aviation to create realistic flight operations, procedures and handbooks for the staff team.
+
+I ran the group from 2024 - 2025, before retiring the group due to burnout, school, and personal reasons.
+The group was acknowledged by another server in this community (PTC News) and was nominated in their yearly awards for "Best Technology" and "Best Airline",
+The airline also additionally amassed 900 members before being handed off to a new CEO.
+
+While i am not directly involved with the group anymore, I am proud of what I was able to accomplish with SWAPTFS and the skills I was able to develop during my time running the group.
+
+The code for the backend of the website is now available for free under the %LINK:MIT:https://en.wikipedia.org/wiki/MIT_License% license.
+
+ %LINK:Backend Codebase:https://github.com/linuxlarp/swaptfs-backend%
+
+I still host and run the website for the current CEO under a fixed contract.
+
+%IMAGE: /static/images/projects/swa/awards.webp%
+%IMAGE: /static/images/projects/swa/m1.webp%
+
+ %LINK:SWAPTFS Website:https://southwestptfs.com%
+
+%IMAGE: /static/images/gradient.webp%

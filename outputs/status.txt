@@ -1,0 +1,5 @@
+This website acting slow or not working or another service under LARPED_ Techlogies? You can check our status page using the link below.
+
+  %LINK:Web Services Status Page:https://status.linuxlarp.dev%
+
+ Status Page hosted by %LINK:Better Stack:https://betterstack.com% linuxlarp.dev or LARPED_ Technologies are in no way affiliated with Better Stack or Better Stack Inc.

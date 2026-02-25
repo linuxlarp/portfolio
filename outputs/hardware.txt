@@ -1,0 +1,48 @@
+󰇅 My Full Setup:
+-------------------------
+ Motherboard: GIGABYTE B650M WIFI GAMING PLUS
+󰻠 CPU: AMD Ryzen 7700X
+ RAM: TEAMGROUP T-FORCE Delta RGB DDR5 48GB (16GB x 3)
+ GPU: NVIDIA RTX 4060Ti
+ PSU: MSI MAG A650BN 650W
+󰇅 Case: Proprietary Prebuilt
+󰈐 AIO: Proprietary with custom CORSAIR ICUE LINK RX140 140mm (2x)
+ Storage: 2TB Generic SSD, 1TB Samsung 990 PRO
+
+While this is a prebuilt, I've done many upgrades and changes over the years! I am planning to eventually do a huge upgrade and swapping the GPU, PSU, and redoing the cooling system with a new case.
+
+%IMAGE: /static/images/build.webp%
+
+ Thinkpad:
+-------------------------
+ Make: Lenovo
+󰣩 Model: X1 Carbon, Gen 7
+󰻠 CPU: Intel i5-8365U "Coffeelake"
+󰻠 GPU: Integrated
+ RAM: 16GB DDR4
+ Storage: 512GB Generic SSD
+
+I use this thing for high school stuff, college work, and aviation studies. Honestly, nothing beats posting up at a coffee shop and just going through homework or coding on it. I grabbed it refurbished, and the battery life was trash. So I threw in an iFixit battery and called it good.
+
+%IMAGE: /static/images/thinkpad.webp%
+
+
+󰟑 Homelab:
+-------------------------
+ Make: DELL
+󰣩 Model: OPTIPLEX 7010
+󰻠 CPU: i3-3220
+ RAM: 4GB DDR3
+ GPU: Intel® HD Graphics 2500
+ PSU: DELL Propietary 250
+󰇅 Case: OPTIPLEX 7010 SFF
+󰈐 Cooling: Single Fan Blower Motor
+ Storage: 1TB SATA SSD
+
+My schools technology department was kind enough to hand one of these to me completely serviceable, I now run Debian Server and host most of my applications and personal use stuff on it. (In fact, you're using it right now by reading this!)
+
+As for the setup, I modified it by replacing thermal paste, removing the default SATA HDD and replacing it with a 1TB SSD SATA I had laying around. And just stripped off the front panel since it didn't fit properly.
+
+While its not very powerful, does a good job and serves it purpose.
+
+%IMAGE: /static/images/hl.webp%
