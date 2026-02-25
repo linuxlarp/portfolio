@@ -15,7 +15,7 @@
 -------------------------
  Make: Lenovo
 󰣩 Model: X1 Carbon, Gen 7
-󰻠 CPU: Intel i5-8365U "Coffelake"
+󰻠 CPU: Intel i5-8365U "Coffeelake"
 󰻠 GPU: Integrated
  RAM: 16GB DDR4
  Storage: 512GB Generic SSD

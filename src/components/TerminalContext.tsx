@@ -9,7 +9,6 @@ interface TerminalLine {
   image?: string;
   className?: string;
   animated?: boolean;
-  statusComponent?: ReactNode;
   link?: { title: string; href: string };
 }
 

@@ -1,12 +1,10 @@
 // /src/components/CommandOutputs.tsx
-import { ReactNode } from "react";
 import generatedOutputs from "../generated/commandOutputs.json";
 
 interface CommandOutput {
   text?: string;
   image?: string;
   animated?: boolean;
-  statusComponent?: ReactNode;
   link?: { title: string; href: string };
   className?: string;
 }
