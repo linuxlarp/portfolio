@@ -1,25 +1,31 @@
 Skills
------------------------
- Python     █████████████████████████ 90
- HTML 5     ███████████████████░░░░░░ 70
- SQL        █████████████████░░░░░░░░ 60
- CSS 3      ██████████████░░░░░░░░░░░ 50
- JavaScript ██████████░░░░░░░░░░░░░░░ 35
- TypeScript ██████░░░░░░░░░░░░░░░░░░░ 20
+Here are all of my skills, including what I’m confident in and what I’m actively learning.
+------------------------------------------------------------
 
-Frameworks
------------------------
- FastAPI █████████████████████████ 70
- NodeJS  ███████████░░░░░░░░░░░░░░ 30
- NextJS  █████░░░░░░░░░░░░░░░░░░░░ 15
- React   ██░░░░░░░░░░░░░░░░░░░░░░░ 5
+Languages
+------------------------------------------------------------
+ Python        > Advanced
+ HTML5         > Intermediate
+ SQL           > Intermediate
+ CSS3          > Intermediate
+ Lua/LuaU      > Intermediate
+ JavaScript    > Beginner–Intermediate
+ TypeScript    > Learning
+ Rust          > Learning
 
+Frameworks / Runtimes
+------------------------------------------------------------
+ FastAPI       > Intermediate–Advanced
+ NodeJS        > Beginner–Intermediate
+ NextJS        > Learning
+ React         > Learning
 
-Platforms/Tools
------------------------
- Discord (Bots) █████████████████████████ 90
- Git            ████████████████████████░ 85
- Raspberry Pi   █████████████████████░░░░ 75
-󱊈 Roblox         ███████████████████░░░░░░ 70
- Red Hat Linux  ██████████████░░░░░░░░░░░ 50
- Cloudflare     ████████░░░░░░░░░░░░░░░░░ 30
+Platforms / Tools / OS
+------------------------------------------------------------
+ Discord (Bots/API)        > Advanced
+ Git                       > Advanced
+ Raspberry Pi / Homelab    > Intermediate–Advanced
+󱊈 Roblox (Lua / Systems)    > Intermediate–Advanced
+ Linux                     > Intermediate-Advanced
+ Cloudflare                > Beginner–Intermediate
+ Docker                    > Intermediate

@@ -44,151 +44,151 @@ export default function Home() {
         statusComponent: null,
       },
       {
-        text: "  Mounting sys filesystem",
+        text: "Mounting sys filesystem",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Mounting proc filesystem",
+        text: "Mounting proc filesystem",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Mounting dev filesystem",
+        text: "Mounting dev filesystem",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Mounting cgroups filesystem",
+        text: "Mounting cgroups filesystem",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Mounting filesystems",
+        text: "Mounting filesystems",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting hostname",
+        text: "Starting hostname",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Adjusting hwclock",
+        text: "Adjusting hwclock",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting kmod-static-nodes",
+        text: "Starting kmod-static-nodes",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting tmpfiles-dev",
+        text: "Starting tmpfiles-dev",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting udev daemon",
+        text: "Starting udev daemon",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Triggering udev uevents",
+        text: "Triggering udev uevents",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Loading user-specified modules",
+        text: "Loading user-specified modules",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Waiting for udev uevents to be processed",
+        text: "Waiting for udev uevents to be processed",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting console-setup",
+        text: "Starting console-setup",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting net-lo",
+        text: "Starting net-lo",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Checking filesystems",
+        text: "Checking filesystems",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Remounting root filesystem rw",
+        text: "Remounting root filesystem rw",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting mount-all",
+        text: "Starting mount-all",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Mounting /home/larp/portfolio (ext4)",
+        text: "Mounting /home/larp/portfolio (ext4)",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Activating swap",
+        text: "Activating swap",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting random-seed",
+        text: "Starting random-seed",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting tmpfiles-setup",
+        text: "Starting tmpfiles-setup",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Starting sysusers",
+        text: "Starting sysusers",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Saving dmesg log",
+        text: "Saving dmesg log",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
       },
       {
-        text: "  Loading sysctl settings",
+        text: "Loading sysctl settings",
         className: "text-green-400",
         animated: false,
         statusComponent: null,
@@ -218,52 +218,49 @@ export default function Home() {
         statusComponent: null,
       },
       {
-        text: "  Running binfmt",
+        text: "Running binfmt",
         className: "text-green-400",
         animated: false,
-        statusComponent: null,
       },
       {
-        text: "  Running binfmt.d",
+        text: "Running binfmt.d",
         className: "text-green-400",
         animated: false,
-        statusComponent: null,
       },
       {
-        text: "  Starting cleanup",
+        text: "Starting cleanup",
         className: "text-green-400",
         animated: false,
-        statusComponent: null,
       },
       {
-        text: "  Initialization complete",
+        text: "Initialization complete",
         className: "text-green-400",
         animated: false,
-        statusComponent: null,
       },
       {
         text: "runit: leave stage: /etc/runit/1",
         className: "text-white",
         animated: false,
-        statusComponent: null,
       },
       {
         text: "runit: enter stage: /etc/runit/2",
         className: "text-white",
         animated: false,
-        statusComponent: null,
       },
       {
         text: "runsvdir: default: current.",
         className: "text-white",
         animated: false,
-        statusComponent: null,
       },
       {
         text: "linuxlarp.dev (tty1)",
         className: "text-white font-bold",
         animated: false,
-        statusComponent: null,
+      },
+      {
+        text: "Welcome to linuxlarp.dev! To view all usable commands, run 'help'",
+        className: "text-orange-100 font-bold",
+        animated: true,
       },
     ];
     setLines(bootLines);
@@ -314,37 +311,8 @@ export default function Home() {
     return parts;
   };
 
-  const renderDropdown = (txt: string) => {
-    // Begin working on this
-    const regex = /%DROPDOWN:([^%]+?)%([\s\S]*?)%DROPDOWN%/g;
-    const parts: React.ReactNode[] = [];
-    let lastIndex = 0;
-    let m: RegExpExecArray | null;
-    let key = 0;
-
-    while ((m = regex.exec(txt)) !== null) {
-      const idx = m.index;
-      if (idx > lastIndex) {
-        parts.push(txt.slice(lastIndex, idx));
-      }
-      parts.push(
-        <details key={`detail-${key++}`} className="">
-          {m[1].trim()}
-        </details>,
-      );
-
-      lastIndex = idx + m[0].length;
-    }
-
-    if (lastIndex < txt.length) {
-      parts.push(txt.slice(lastIndex));
-    }
-
-    return parts;
-  };
-
   const renderTerminalLine = (line: (typeof lines)[0], index: number) => {
-    const showStatus = line.statusComponent && currentLine > index;
+    const showStatus = currentLine > index;
 
     if (line.image) {
       return (
@@ -359,9 +327,6 @@ export default function Home() {
     if (line.link) {
       return (
         <>
-          {line.statusComponent && (
-            <span className="flex-shrink-0">{line.statusComponent}</span>
-          )}
           <a
             href={line.link.href}
             target="_blank"
@@ -382,9 +347,7 @@ export default function Home() {
         );
         return (
           <>
-            {showStatus && (
-              <span className="flex-shrink-0">{line.statusComponent}</span>
-            )}
+            {showStatus && <span className="flex-shrink-0"></span>}
             <span className={line.className}>
               <TerminalLine
                 text={typingText}
@@ -398,9 +361,7 @@ export default function Home() {
 
       return (
         <>
-          {line.statusComponent && (
-            <span className="flex-shrink-0">{line.statusComponent}</span>
-          )}
+          {<span className="flex-shrink-0"></span>}
           <span
             className={`${line.className} whitespace-pre-wrap break-words flex-1`}
           >
@@ -412,9 +373,6 @@ export default function Home() {
 
     return (
       <>
-        {line.statusComponent && (
-          <span className="flex-shrink-0">{line.statusComponent}</span>
-        )}
         <span
           className={`${line.className} whitespace-pre-wrap break-words flex-1`}
         >
@@ -429,7 +387,7 @@ export default function Home() {
 
     return (
       <div className="flex items-center gap-2 mt-2">
-        <span className="text-green-400">guest@linuxlarp:~$</span>
+        <span className="text-green-400">guest@linuxlarp.dev:~$</span>
         <input
           type="text"
           value={inputValue}

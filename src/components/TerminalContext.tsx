@@ -94,27 +94,18 @@ export function TerminalProvider({ children }: { children: ReactNode }) {
 
 Available commands are:
 help - Displays this message
-clears - Clears all messages in the TerminalContext
+clears - Clears all messages in the Terminal
 about - Displays about me of linuxlarp
 projects - Shows a list of my projects you can view by typing each individual name in
 skills - Shows my skillset of languages, tools and platforms
 contact - Shows where you can contact me and social media platforms
 source - Shows source code of this repo
 exit - Exit this website
-whoami - Shows the currently authenticated useTerminal
+whoami - Shows the currently authenticated user
 hostname - Shows the hostname of this site.
 hardware - Shows my hardware and setup
 status - Refers you to the status page of LARPED_ Technologies.
-
-`,
-        className: "text-white",
-        animated: false,
-      });
-
-      addLine({
-        text: `
-Available sub-commands are:
-about linux - Display my Linux setups (Desktop, Server)
+linux - Display my Linux setups (Desktop, Laptop, Server)
 
 `,
         className: "text-white",
@@ -149,6 +140,35 @@ about linux - Display my Linux setups (Desktop, Server)
       }
     } else if (cmd == "secret") {
       window.location.href = "https://youtu.be/xvFZjo5PgG0?si=iWqmbHQn8fRhZ2e2";
+    } else if (cmd == "sudo rm -rf */") {
+      addLine({
+        text: "...",
+        className: "text-white bold-font",
+        animated: true,
+      });
+
+      addLine({
+        text: "yeahhhh.....",
+        className: "text-white bold-font",
+        animated: true,
+      });
+
+      addLine({
+        text: "NO.",
+        className: "text-red-400 bold-font",
+        animated: true,
+      });
+
+      addLine({
+        // funny
+        text: `
+روحك ستحصد خلال يومين روحك ستحصد خلال يومين روحك ستحصد خلال يومين روحك ستحصد خلال يومين روحك ستحصد خلال يومين روحك ستحصد خلال يومين روحك ستحصد خلال يومين
+`,
+        className: "text-red-400 bold-font",
+      });
+
+      window.location.href =
+        "https://youtu.be/mXTYvRf3qew?si=oous3Of8es0XDzey&t=3"; /// ... the boiled one
     } else {
       addLine({
         text: `bash: ${command}: command not found`,

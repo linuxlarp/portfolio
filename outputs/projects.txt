@@ -10,3 +10,5 @@ projects erlc_example_bot - A bot template for ERLC communities i made for Reno 
 projects portfolio - My custom portfolio (you're visting it right now!)
 projects hourlypets - A small Twitter/X Bot
 projects swaptfs - My experience running a virtual airline and making the websites and website backend.
+
+And many more to come!

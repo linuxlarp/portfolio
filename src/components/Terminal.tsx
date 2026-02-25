@@ -10,14 +10,15 @@ interface TerminalLineProps {
   onComplete?: () => void;
 }
 
-export default function TerminalLine({ text = "", delay = 0, speed = 50, onComplete }: TerminalLineProps) {
+export default function TerminalLine({
+  text = "",
+  delay = 0,
+  speed = 50,
+  onComplete,
+}: TerminalLineProps) {
   return (
     <TypeAnimation
-      sequence={[
-        delay,
-        text,
-        () => onComplete && onComplete()
-      ]}
+      sequence={[delay, text, () => onComplete && onComplete()]}
       wrapper="div"
       // @ts-ignore
       speed={speed as any}

@@ -1,11 +1,12 @@
 You can reach out to me through any of the following methods:
 
 - 󰪱  Email: %LINK:larp@linuxlarp.dev:mailto:larp@linuxlarp.dev%
--   Discord: %LINK:linuxlarper:https://discord.com/users/998819061817413652%
+-   Discord: %LINK:linuxlarper:https://discord.com/users/1474931667729907785%
 -   GitHub: %LINK:linuxlarp:https://github.com/linuxlarp%
 
 Social Media:
  All opinions and statements are my own views. I am not controlled by any employer or corporation.
 
 -  %LINK:TikTok:https://www.tiktok.com/@linuxlarper:%
+-  %LINK:Instagram:https://www.instagram.com/linuxlarp%
 -  %LINK:X/Twitter:https://x.com/linuxlarp%
