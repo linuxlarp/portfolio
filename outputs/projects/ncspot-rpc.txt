@@ -1,0 +1,17 @@
+ncspot-rpc is a simple python-based extension to display ncspot data (terminal player for spotify clients), on your Discord profile. It is now offically published on %LINK: PyPi:https://pypi.org%.
+
+The program works by connecting to a UNIX socket that ncspot spawns on start, and converting the JSON payload through pydantic model validation, and then sending the payload back to Discord's RPC using pypresence
+
+While this is a simple program and solves a very niche issue, I still maintain it to this day. And it taught me a lot about code safety, publishing packages to PyPi and is one of my first major open-source projects.
+
+%IMAGE: /static/images/projects/rpc/concept.webp%
+
+%IMAGE: /static/images/projects/rpc/concept2.webp%
+(With customization options)
+
+%IMAGE: /static/images/projects/rpc/full.webp%
+
+ %LINK:GitHub Repository (Source Code):https://github.com/linuxlarp/ncspot-rpc%
+ %LINK:PyPi Package:https://pypi.org/project/ncspot-rpc/%
+
+%IMAGE: /static/images/gradient.webp%

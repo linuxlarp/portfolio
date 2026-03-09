@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "The offical terminal-based portfolio for linuxlarp. Includes experience, projects, skills and more about my linux setup and rice!",
     images: [
       {
-        url: "https://linuxlarp.dev/static/images/welcome_banner.webp",
+        url: "https://linuxlarp.dev/static/images/welcome.webp",
       },
     ],
     locale: "en_US",
@@ -50,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name="theme-color" content="#628df0" />
+      <meta name="theme-color" content="#64c1e3" />
 
       <body className={` ${nerdFont.variable} antialiased bg-black`}>
         <TerminalProvider>{children}</TerminalProvider>

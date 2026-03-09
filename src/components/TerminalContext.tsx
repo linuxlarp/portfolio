@@ -140,7 +140,7 @@ linux - Display my Linux setups (Desktop, Laptop, Server)
       }
     } else if (cmd == "secret") {
       window.location.href = "https://youtu.be/xvFZjo5PgG0?si=iWqmbHQn8fRhZ2e2";
-    } else if (cmd == "sudo rm -rf */") {
+    } else if (cmd == "sudo rm -rf /") {
       addLine({
         text: "...",
         className: "text-white bold-font",

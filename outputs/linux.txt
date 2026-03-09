@@ -1,25 +1,29 @@
-I currently daily drive linux on both my Computer and Thinkpad X1 Carbon for all use purposes. I use it for coding, schoolwork and college, gaming and general usage.
+I daily drive Linux on both my desktop and Thinkpad X1 Carbon for coding, schoolwork, gaming and general use. My setup uses a custom Hyprland configuration for window management, styling, along with Waybar for interaction. I currently use Artix Linux and prefer non-systemd distributions, priotizing speed, minimalism, and battery efficency (especially on my ThinkPad)
 
 My Linux Setup (Desktop):
 - Distro: %LINK:Artix Linux:https://artixlinux.org% 󰣇
 - Kernel: linux-lts 
-- Terminal: ghostty 󱙝
+- Terminal: kitty 󰄛
 - WM: Hyprland 
 - Shell: fish 󰈺
-- Desktop Shell: %LINK:Noctalia:https://noctalia.dev% 󰏒
+- Bar: Waybar 
+- Launcher: Fuzzel 
 
-%IMAGE: /static/images/rice.webp%
-
+%IMAGE: /static/images/linux/full1.webp%
+%IMAGE: /static/images/linux/full2.webp%
+%IMAGE: /static/images/linux/music.webp%
+%IMAGE: /static/images/linux/launcher.webp%
 
 My Linux Setup (Thinkpad):
 - Distro: %LINK:Artix Linux:https://artixlinux.org% 󰣇
 - Kernel: linux-zen 
-- Terminal: foot 󰽒
+- Terminal: kitty 󰄛
 - WM: Hyprland 
 - Shell: fish 󰈺
-- Desktop Shell: %LINK:Noctalia:https://noctalia.dev% 󰏒
+- Bar: Waybar 
+- Launcher: Fuzzel 
 
-%IMAGE: /static/images/thinkpad_rice.webp%
+%IMAGE: /static/images/linux/thinkpad.webp%
 
 
 My Linux Server Setup (Homelab):
@@ -27,4 +31,4 @@ My Linux Server Setup (Homelab):
 - Kernel: linux 
 - Shell: bash 
 
-%IMAGE: /static/images/homelab_setup.webp%
+%IMAGE: /static/images/linux/homelab.webp%

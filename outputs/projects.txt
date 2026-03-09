@@ -10,5 +10,6 @@ projects erlc_example_bot - A bot template for ERLC communities i made for Reno 
 projects portfolio - My custom portfolio (you're visting it right now!)
 projects hourlypets - A small Twitter/X Bot
 projects swaptfs - My experience running a virtual airline and making the websites and website backend.
+projects ncspot-rpc - A simple Discord Rich Presence adapater to display ncspot data (terminal music player for spotify) on your discord profile.
 
 And many more to come!

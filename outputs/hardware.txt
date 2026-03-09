@@ -11,20 +11,20 @@
 
 While this is a prebuilt, I've done many upgrades and changes over the years! I am planning to eventually do a huge upgrade and swapping the GPU, PSU, and redoing the cooling system with a new case.
 
-%IMAGE: /static/images/build.webp%
+%IMAGE: /static/images/hardware/desktop.webp%
 
  Thinkpad:
 -------------------------
  Make: Lenovo
 󰣩 Model: X1 Carbon, Gen 7
-󰻠 CPU: Intel i5-8365U "Coffeelake"
+󰻠 CPU: Intel i5-8365U (Coffeelake Family)
 󰻠 GPU: Integrated
  RAM: 16GB DDR4
  Storage: 512GB Generic SSD
 
 I use this thing for high school stuff, college work, and aviation studies. Honestly, nothing beats posting up at a coffee shop and just going through homework or coding on it. I grabbed it refurbished, and the battery life was trash. So I threw in an iFixit battery and called it good.
 
-%IMAGE: /static/images/thinkpad.webp%
+%IMAGE: /static/images/hardware/thinkpad.webp%
 
 
 󰟑 Homelab:
@@ -45,4 +45,4 @@ As for the setup, I modified it by replacing thermal paste, removing the default
 
 While its not very powerful, does a good job and serves it purpose.
 
-%IMAGE: /static/images/hl.webp%
+%IMAGE: /static/images/hardware/hl.webp%
