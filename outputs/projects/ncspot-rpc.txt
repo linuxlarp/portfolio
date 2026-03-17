@@ -9,8 +9,6 @@ While this is a simple program and solves a very niche issue, I still maintain i
 %IMAGE: /static/images/projects/rpc/concept2.webp%
 (With customization options)
 
-%IMAGE: /static/images/projects/rpc/full.webp%
-
  %LINK:GitHub Repository (Source Code):https://github.com/linuxlarp/ncspot-rpc%
  %LINK:PyPi Package:https://pypi.org/project/ncspot-rpc/%
 
