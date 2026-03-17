@@ -1,7 +1,6 @@
 You can reach out to me through any of the following methods:
 
-- 󰪱  Email: %LINK:larp@linuxlarp.dev:mailto:larp@linuxlarp.dev%
--   Discord: %LINK:linuxlarper:https://discord.com/users/1474931667729907785%
+- 󰪱  Email: %LINK:larp@linuxlarp.dev:mailto:contact@linuxlarp.dev% (Preferred)
 -   GitHub: %LINK:linuxlarp:https://github.com/linuxlarp%
 
 Social Media:

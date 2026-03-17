@@ -2,14 +2,17 @@
 -------------------------
  Motherboard: GIGABYTE B650M WIFI GAMING PLUS
 󰻠 CPU: AMD Ryzen 7700X
- RAM: TEAMGROUP T-FORCE Delta RGB DDR5 48GB (16GB x 3)
+ RAM: TEAMGROUP T-FORCE Delta RGB DDR5 48GB (16GB x 2)
  GPU: NVIDIA RTX 4060Ti
  PSU: MSI MAG A650BN 650W
 󰇅 Case: Proprietary Prebuilt
-󰈐 AIO: Proprietary with custom CORSAIR ICUE LINK RX140 140mm (2x)
+󰈐 Cooler: Peerless Assassin 120 SE Extrem
+󰈐 Fans: 2x Corsair ICUE LINK RX140 140mm (2x)
  Storage: 2TB Generic SSD, 1TB Samsung 990 PRO
 
-While this is a prebuilt, I've done many upgrades and changes over the years! I am planning to eventually do a huge upgrade and swapping the GPU, PSU, and redoing the cooling system with a new case.
+While I did get this as a prebuilt, Ive done many upgrades over the years, such as putting in a new PSU, and as of recent. Upgrading the cooler and getting rid of the propietary AIO and instead replacing it with a Peerless Assasian 120 SE Extrem, and setting up my two Corsair fans as intake and outtake fans.
+
+While my cable management is quite messy, I cant really adapt much further as my case doesnt permit. But overall, Ive done enough over the years to not really consider this a "prebuilt" anymore.
 
 %IMAGE: /static/images/hardware/desktop.webp%
 

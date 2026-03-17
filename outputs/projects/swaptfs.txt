@@ -2,21 +2,17 @@ Southwest Airlines PTFS 󰋑
 
 SWAPTFS was a personal project, attempting to realistically recreate the operations of the IRL Southwest Airlines in Roblox's PTFS (Pilot Training Flight Simulator)
 
-With this project, I used several skills to help properly run, develop and manage the group.  These skills include:
-- Using Photoshop  to create advertisements, server embeds, logos, and other graphics for the group.
-- Using Discord  to manage the community, communicate with members, and provide support.
-- Using Python , TypeScript , JavaScript , and FastAPI  & NextJS  to create a fully functional website.
-- Using my knowledge of aviation to create realistic flight operations, procedures and handbooks for the staff team.
+Key Contirbutions:
+- Using Photoshop to design graphics, including advertisements and branding assets.
+- Using Discord to manage and moderate the community.
+- Using Python  , TypeScript , JavaScript , FastAPI  & NextJS  to build and maintain the group's website.
+- Using aviation knowledge to develop flight procedures and staff documentation.
 
-I ran the group from 2024 - 2025, before retiring the group due to burnout, school, and personal reasons.
-The group was acknowledged by another server in this community (PTC News) and was nominated in their yearly awards for "Best Technology" and "Best Airline",
-The airline also additionally amassed 900 members before I transitioned leadership to a new CEO, SWAPTFS has since concluded operations, but the project remains a milestone I look back on with pride for everything it taught me.
+The group ran for approximately a year before I stepped down due to personal reasons. It recieved community recognition through nominations for "Best Technology" and "Best Airline", and grew to nearly 1,000 members before leadership was transferred.
 
 The code for the backend of the website is now available for free under the %LINK:MIT:https://en.wikipedia.org/wiki/MIT_License% license.
 
  %LINK:Backend Codebase:https://github.com/linuxlarp/swaptfs-backend%
 
-%IMAGE: /static/images/projects/swa/awards.webp%
 %IMAGE: /static/images/projects/swa/m1.webp%
-
 %IMAGE: /static/images/gradient.webp%
